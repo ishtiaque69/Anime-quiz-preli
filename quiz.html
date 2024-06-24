@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="quiz">
+    <div class="quizdesign">
+        <h3>Anime Quiz</h3>
+        <div id="timer" class="timer">20:00</div>
+        <form id="quizForm">
+            <!-- Insert 10 random questions here -->
+            <div class="question">
+                <p>Question 1: Who was the 8th Lab Member in Future Gadget Laboratory?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q1a1" name="q1" value="wrong"><label for="q1a1">Mayuri
+                            Shiina</label></div>
+                    <div class="option"><input type="radio" id="q1a2" name="q1" value="wrong"><label for="q1a2">Kiryuu
+                            Moeka</label></div>
+                    <div class="option"><input type="radio" id="q1a3" name="q1" value="correct"><label for="q1a3">Suzuha
+                            Amane</label></div>
+                    <div class="option"><input type="radio" id="q1a4" name="q1" value="wrong"><label for="q1a4">Rumiho
+                            Akiha</label></div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 2: Who was the leader of the “new” B Komachi idol group?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q2a1" name="q2" value="wrong"><label for="q2a1">Ruby
+                            Hoshino</label></div>
+                    <div class="option"><input type="radio" id="q2a2" name="q2" value="wrong"><label for="q2a2">Akane
+                            Kurokawa</label></div>
+                    <div class="option"><input type="radio" id="q2a3" name="q2" value="wrong"><label
+                            for="q2a3">Mem-cho</label></div>
+                    <div class="option"><input type="radio" id="q2a4" name="q2" value="correct"><label for="q2a4">Kana
+                            Arima</label></div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 3: Which character possesses the Bankai “Minazuki”?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q3a1" name="q3" value="wrong"><label for="q3a1">Rukia
+                            Kuchiki</label></div>
+                    <div class="option"><input type="radio" id="q3a2" name="q3" value="correct"><label
+                            for="q3a2">Unohana Retsu</label></div>
+                    <div class="option"><input type="radio" id="q3a3" name="q3" value="wrong"><label for="q3a3">Urahara
+                            Kisuke</label></div>
+                    <div class="option"><input type="radio" id="q3a4" name="q3" value="wrong"><label for="q3a4">Rangiku
+                            Matsumoto</label></div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 4: Who was the 15th commander of the Scout Regiment in Attack on Titan?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q4a1" name="q4" value="wrong"><label for="q4a1">Keith
+                            Shadis</label></div>
+                    <div class="option"><input type="radio" id="q4a2" name="q4" value="wrong"><label for="43a2">Floch
+                            Forster</label></div>
+                    <div class="option"><input type="radio" id="q4a3" name="q4" value="wrong"><label for="q4a3">Zoe
+                            Hange</label></div>
+                    <div class="option"><input type="radio" id="q4a4" name="q4" value="correct"><label for="q4a4">Armin
+                            Arlert</label></div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 5: What is Celty Sturluson’s true identity in DURARARA?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q5a1" name="q5" value="wrong"><label
+                            for="q5a1">Shinigami</label></div>
+                    <div class="option"><input type="radio" id="q5a2" name="q5" value="wrong"><label for="q5a2">Cemetery
+                            Ghost</label></div>
+                    <div class="option"><input type="radio" id="q5a3" name="q5" value="correct"><label
+                            for="q5a3">Dullahan</label></div>
+                    <div class="option"><input type="radio" id="q5a4" name="q5" value="wrong"><label
+                            for="q5a4">Mahoutsukai</label></div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 6: What was the word that Teru Mikami was obsessed with while killing his victims?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q6a1" name="q6" value="wrong"><label
+                            for="q6a1">Die</label></div>
+                    <div class="option"><input type="radio" id="q6a2" name="q6 value=" wrong"><label
+                            for="q6a2">Obliterate</label></div>
+                    <div class="option"><input type="radio" id="q6a3" name="q6" value="wrong"><label
+                            for="q6a3">Disappear</label></div>
+                    <div class="option"><input type="radio" id="q6a4" name="q6" value="correct"><label
+                            for="q6a4">Delete</label></div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 7: Who was the first homunculus?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q7a1" name="q7" value="correct"><label
+                            for="q7a1">Pride</label></div>
+                    <div class="option"><input type="radio" id="q7a2" name="q7" value="wrong"><label
+                            for="q7a2">Wrath</label></div>
+                    <div class="option"><input type="radio" id="q7a3" name="q7" value="wrong"><label
+                            for="q7a3">Gluttony</label></div>
+                    <div class="option"><input type="radio" id="q7a4" name="q7" value="wrong"><label
+                            for="q7a4">Lust</label></div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 8: Where did the 2nd phase of the Chunin exam take place?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q8a1" name="q8" value="wrong"><label for="q8a1">The
+                            Sound Village</label></div>
+                    <div class="option"><input type="radio" id="q8a2" name="q8" value="wrong"><label for="q8a2">The leaf
+                            Village
+                        </label></div>
+                    <div class="option"><input type="radio" id="q8a3" name="q8" value="correct"><label for="q8a3">The
+                            Forest of Death</label></div>
+                    <div class="option"><input type="radio" id="q8a4" name="q8" value="wrong"><label for="q8a4">
+                            test ground No. 46</label></div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 9: What was the machine that caused David Martinez to incur Cyberpsychosis?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q9a1" name="q9" value="wrong"><label
+                            for="q9a1">Sandevistan</label></div>
+                    <div class="option"><input type="radio" id="q9a2" name="q9" value="wrong"><label for="q9a2">Kiroshi
+                            Optics</label></div>
+                    <div class="option"><input type="radio" id="q9a3" name="q9" value="wrong"><label for="q9a3">
+                            Killer Forearms</label></div>
+                    <div class="option"><input type="radio" id="q9a4" name="q9" value="correct"><label for="q9a4">Cyber
+                            Skeleton</label></div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 10: What was the name of the sadistic ghoul that tortured Kaneki?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q10a1" name="q10" value="wrong"><label for="q10a1">Rize
+                            kamishiro</label></div>
+                    <div class="option"><input type="radio" id="q10a2" name="q10" value="wrong"><label
+                            for="q10a2">Nishiki Nishio</label></div>
+                    <div class="option"><input type="radio" id="q10a3" name="q10" value="wrong"><label for="q10a3">Shuu
+                            Tsukiyama</label></div>
+                    <div class="option"><input type="radio" id="q10a4" name="q10" value="correct"><label
+                            for="q10a4">Jason</label></div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 11: "To win, but not destroy; to conquer, but not humiliate: That is what true conquest is!"
+                    – whose quote is this?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q11a1" name="q11" value="wrong"><label
+                            for="q11a1">Saber</label></div>
+                    <div class="option"><input type="radio" id="q11a2" name="q11" value="correct"><label
+                            for="q11a2">Iskander</label></div>
+                    <div class="option"><input type="radio" id="q11a3" name="q11" value="wrong"><label
+                            for="q11a3">Gilgamesh</label></div>
+                    <div class="option"><input type="radio" id="q11a4" name="q11" value="wrong"><label for="q11a4">Emiya
+                            Shirou</label></div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 12: Who (accidentally) ordered Euphemia to kill the people of Japan?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q12a1" name="q12" value="wrong"><label
+                            for="q12a1">Schneizel vi Britannia</label></div>
+                    <div class="option"><input type="radio" id="q12a2" name="q12" value="wrong"><label
+                            for="q12a2">C.C</label></div>
+                    <div class="option"><input type="radio" id="q12a3" name="q12" value="correct"><label
+                            for="q12a3">Lelouch</label></div>
+                    <div class="option"><input type="radio" id="q12a4" name="q12" value="wrong"><label
+                            for="q12a4">V.V</label></div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 13: In Haikyuu!! there’s this move where Kageyama lofts the ball really high up in the air,
+                    creating room for Hinata to jump to his full capability and smash an impeccable spike. What’s the
+                    name of this move?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q13a1" name="q13" value="wrong"><label for="q13a1">Zero
+                            Tempo</label></div>
+                    <div class="option"><input type="radio" id="q13a2" name="q13" value="correct"><label
+                            for="q13a2">Four Set</label></div>
+                    <div class="option"><input type="radio" id="q13a3" name="q13" value="wrong"><label for="q13a3">Minus
+                            Tempo</label></div>
+                    <div class="option"><input type="radio" id="q13a4" name="q13" value="wrong"><label for="q13a4">High
+                            Ball</label></div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 14: What is Killua’s nen type?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q14a1" name="q14" value="wrong"><label
+                            for="q14a1">Enhancer</label></div>
+                    <div class="option"><input type="radio" id="q14a2" name="q14" value="wrong"><label
+                            for="q14a2">Conjurer</label></div>
+                    <div class="option"><input type="radio" id="q14a3" name="q14" value="wrong"><label
+                            for="q14a3">Special</label></div>
+                    <div class="option"><input type="radio" id="q14a4" name="q14" value="correct"><label
+                            for="q14a4">Transmutation</label></div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 15: Among the characters who can read the carvings on Poneglyphs, which one was introduced
+                    first in the anime as an active protagonist?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q15a1" name="q15" value="wrong"><label
+                            for="q15a1">Doflamingo </label></div>
+                    <div class="option"><input type="radio" id="q15a2" name="q15" value="wrong"><label
+                            for="q15a2">Oden</label></div>
+                    <div class="option"><input type="radio" id="q15a3" name="q15" value="correct"><label
+                            for="q15a3">Nico Robin</label></div>
+                    <div class="option"><input type="radio" id="q15a4" name="q15" value="wrong"><label for="q15a4">Gol
+                            D. Roger</label></div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 16: Which character in Bungou Stray Dogs is a different entity from human being?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q16a1" name="q16" value="wrong"><label
+                            for="q16a1">Fyodor Dostoevesky</label></div>
+                    <div class="option"><input type="radio" id="q16a2" name="q16" value="correct"><label
+                            for="q16a2">Chuuya Nakahara</label></div>
+                    <div class="option"><input type="radio" id="q16a3" name="q16" value="wrong"><label for="q16a3">Dazai
+                            Osamu</label></div>
+                    <div class="option"><input type="radio" id="q16a4" name="q16" value="wrong"><label for="q16a4">Oda
+                            Sakunosuke</label></div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 17: According to Deku, who was the strongest villain that he had ever fought?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q17a1" name="q17" value="correct"><label
+                            for="q17a1">Gentle Criminal</label></div>
+                    <div class="option"><input type="radio" id="q17a2" name="q17" value="wrong"><label
+                            for="q17a2">Muscle Man</label></div>
+                    <div class="option"><input type="radio" id="q17a3" name="q17" value="wrong"><label
+                            for="q17a3">Shigaraki Tomura</label></div>
+                    <div class="option"><input type="radio" id="q17a4" name="q17" value="wrong"><label for="q17a4">All
+                            for One</label></div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 18: Who is the mist hashira?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q18a1" name="q18" value="wrong"><label for="q18a1">Uzui
+                            Tengen</label></div>
+                    <div class="option"><input type="radio" id="q18a2" name="q18" value="wrong"><label for="q18a2">Giyu
+                            Tomioka</label></div>
+                    <div class="option"><input type="radio" id="q18a3" name="q18" value="correct"><label
+                            for="q18a3">Tokitou Muichiro</label></div>
+                    <div class="option"><input type="radio" id="q18a4" name="q18" value="wrong"><label for="q18a4">Iguro
+                            Obanai</label></div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 19: Name the world into which Sora and Shiro were teleported by te God of Games?</p>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q19a1" name="q19" value="wrong"><label
+                            for="q19a1">Tet</label></div>
+                    <div class="option"><input type="radio" id="q19a2" name="q19" value="wrong"><label
+                            for="q19a2">Blank</label></div>
+                    <div class="option"><input type="radio" id="q19a3" name="q19" value="correct"><label
+                            for="q19a3">Disboard</label></div>
+                    <div class="option"><input type="radio" id="q19a4" name="q19" value="wrong"><label
+                            for="q19a4">Immanityi</label></div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 20:Who is the auditor of the student council?</p>
+
+                <div class="options">
+                    <div class="option"><input type="radio" id="q20a1" name="q20" value="wrong"><label
+                            for="q20a1">Tsubame Koyasu</label></div>
+                    <div class="option"><input type="radio" id="q20a2" name="q20" value="wrong"><label for="q20a2">Yuu
+                            Ishigami</label></div>
+                    <div class="option"><input type="radio" id="q20a3" name="q20" value="wrong"><label
+                            for="q20a3">Kaguya Shinomiya</label></div>
+                    <div class="option"><input type="radio" id="q20a4" name="q20" value="correct"><label
+                            for="q20a4">Miko Iino</label></div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 21: Name the anime from which this opening/ ending is.</p>
+                <audio controls>
+                    <source src="11.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q21a1" name="q21" value="wrong"><label for="q21a1">Oshi
+                            no Ko</label></div>
+                    <div class="option"><input type="radio" id="q21a2" name="q21" value="wrong"><label
+                            for="q21a2">Lycoris Recoil</label></div>
+                    <div class="option"><input type="radio" id="q21a3" name="q21" value="correct">
+                        <label for="q21a3">Mahou Shoujo Madoka Magica</label>
+                    </div>
+                    <div class="option"><input type="radio" id="q21a4" name="q21" value="wrong">
+                        <label for="q21a4">Boku no Hero Academia</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 22: Name the anime from which this opening/ ending is.</p>
+                <audio controls>
+                    <source src="12.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q22a1" name="q22" value="wrong"><label
+                            for="q22a1">Ajin</label></div>
+                    <div class="option"><input type="radio" id="q22a2" name="q22" value="correct"><label
+                            for="q22a2">Beyond the Boundary</label></div>
+                    <div class="option"><input type="radio" id="q22a3" name="q22" value="wrong">
+                        <label for="q22a3">Moriarty the Patriot</label>
+                    </div>
+                    <div class="option"><input type="radio" id="q22a4" name="q22" value="wrong">
+                        <label for="q22a4">Dungeon Meshi</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 23: Name the anime from which this opening/ ending is.</p>
+                <audio controls>
+                    <source src="13.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q23a1" name="q23" value="correct"><label
+                            for="q23a1">Psycho Pass</label></div>
+                    <div class="option"><input type="radio" id="q23a2" name="q23" value="wrong"><label
+                            for="q23a2">Kekkai Sensen</label></div>
+                    <div class="option"><input type="radio" id="q23a3" name="q23" value="wrong">
+                        <label for="q23a3">Plastic Memories</label>
+                    </div>
+                    <div class="option"><input type="radio" id="q23a4" name="q23" value="wrong">
+                        <label for="q23a4">Assassination Classroom</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 24: Name the anime from which this opening/ ending is.</p>
+                <audio controls>
+                    <source src="14.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q24a1" name="q24" value="wrong"><label
+                            for="q24a1">Gakkkou Gurashi</label></div>
+                    <div class="option"><input type="radio" id="q24a2" name="q24" value="wrong"><label
+                            for="q24a2">Hamatora</label></div>
+                    <div class="option"><input type="radio" id="q24a3" name="q24" value="wrongt">
+                        <label for="q24a3">Haikyuu!!</label>
+                    </div>
+                    <div class="option"><input type="radio" id="q24a4" name="q24" value="correct">
+                        <label for="q24a4">Bungou Stray Dogs</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 25: Name the anime from which this opening/ ending is.</p>
+                <audio controls>
+                    <source src="15.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q25a1" name="q25" value="wrong"><label
+                            for="q25a1">Kaguya Sama</label></div>
+                    <div class="option"><input type="radio" id="q25a2" name="q25" value="wrong"><label
+                            for="q25a2">Clannad</label></div>
+                    <div class="option"><input type="radio" id="q25a3" name="q25" value="wrong">
+                        <label for="q25a3">Monogatari</label>
+                    </div>
+                    <div class="option"><input type="radio" id="q25a4" name="q25" value="correct">
+                        <label for="q25a4">Guilty Crown</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 26: Name the anime from which this opening/ ending is.</p>
+                <audio controls>
+                    <source src="16.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q26a1" name="q26" value="wrong"><label
+                            for="q26a1">Fullmetal Alchemist</label></div>
+                    <div class="option"><input type="radio" id="q26a2" name="q26" value="correct"><label
+                            for="q26a2">Death Parade</label></div>
+                    <div class="option"><input type="radio" id="q26a3" name="q26" value="wrong">
+                        <label for="q26a3">Bocchi the Rock</label>
+                    </div>
+                    <div class="option"><input type="radio" id="q26a4" name="q26" value="wrong">
+                        <label for="q26a4">Dr. Stone</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 27: Name the anime from which this opening/ ending is.</p>
+                <audio controls>
+                    <source src="17.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q27a1" name="q27" value="wrong"><label for="q27a1">Code
+                            Geass</label></div>
+                    <div class="option"><input type="radio" id="q27a2" name="q27" value="wrong"><label
+                            for="q27a2">Kuroko's Basket</label></div>
+                    <div class="option"><input type="radio" id="q27a3" name="q27" value="wrong">
+                        <label for="q27a3">Wind Breaker</label>
+                    </div>
+                    <div class="option"><input type="radio" id="q27a4" name="q27" value="correct">
+                        <label for="q27a4">Noragami</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 28: Name the anime from which this opening/ ending is.</p>
+                <audio controls>
+                    <source src="18.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q28a1" name="q28" value="wrong"><label
+                            for="q28a1">Terror in Resonance</label></div>
+                    <div class="option"><input type="radio" id="q28a2" name="q28" value="wrong"><label
+                            for="q28a2">Shinsekai Yori</label></div>
+                    <div class="option"><input type="radio" id="q28a3" name="q28" value="correct">
+                        <label for="q28a3">Dororo</label>
+                    </div>
+                    <div class="option"><input type="radio" id="q28a4" name="q28" value="wrong">
+                        <label for="q28a4">Baccano</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 29: Name the anime from which this opening/ ending is.</p>
+                <audio controls>
+                    <source src="19.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q29a1" name="q29" value="wrong"><label
+                            for="q29a1">Charlotte</label></div>
+                    <div class="option"><input type="radio" id="q29a2" name="q29" value="wrong"><label
+                            for="q29a2">Hyouka</label></div>
+                    <div class="option"><input type="radio" id="q29a3" name="q29" value="correct">
+                        <label for="q29a3">Shigatsu wa Kimi no Uso</label>
+                    </div>
+                    <div class="option"><input type="radio" id="q29a4" name="q29" value="wrong">
+                        <label for="q29a4">Oregairu</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 30: Name the anime from which this opening/ ending is.</p>
+                <audio controls>
+                    <source src="20.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="options">
+                    <div class="option"><input type="radio" id="q30a1" name="q30" value="wrong"><label
+                            for="q30a1">Fullmetal Panic</label></div>
+                    <div class="option"><input type="radio" id="q30a2" name="q30" value="wrong"><label for="q30a2">A
+                            Certain Scientific Railgun</label></div>
+                    <div class="option"><input type="radio" id="q30a3" name="q30" value="wrong">
+                        <label for="q30a3">Jigokuraku</label>
+                    </div>
+                    <div class="option"><input type="radio" id="q30a4" name="q30" value="correct">
+                        <label for="q30a4">Yakusoku no Neverland</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 11: Describe your favorite anime scene and why it is special to you.</p>
+                <textarea id="q31_answer" name="q31_answer" rows="2" cols="50"></textarea>
+            </div>
+            
+            <div class="question">
+                <p>Question 12: Who is your favorite anime character and why?</p>
+                <textarea id="q32_answer" name="q32_answer" rows="2" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 12: Who is your favorite anime character and why?</p>
+                <textarea id="q33_answer" name="q33_answer" rows="2" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 12: Who is your favorite anime character and why?</p>
+                <iframe width="560" height="315" src="roll.mp4" frameborder="0" allowfullscreen></iframe>
+                <textarea id="q34_answer" name="q34_answer" rows="2" cols="50"></textarea>
+            </div>
+            
+
+
+
+            <!-- Repeat the above block for 10 questions with different options and names -->
+            <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
