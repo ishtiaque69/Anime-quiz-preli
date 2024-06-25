@@ -84,7 +84,6 @@ function submitQuiz() {
     window.location.href = 'results.html';
 }
 
-
 function loadResults() {
     const userName = localStorage.getItem('userName');
 
@@ -101,13 +100,13 @@ function loadAnswerSheet() {
         const tbody = document.createElement('tbody');
 
         const headerRow = document.createElement('tr');
-        headerRow.innerHTML = '<th>Name</th><th>Email</th><th>Time Taken (seconds)</th><th>Answer to Question 30</th><th>Answer to Question 11</th>';
-        
-        // Extract other question headers dynamically based on stored data
+        headerRow.innerHTML = '<th>Name</th><th>Email</th><th>Time Taken (seconds)</th>';
+
+        // Extract question headers dynamically based on stored data
         const questionKeys = Object.keys(allAnswers[0]).filter(key => key !== 'name' && key !== 'email' && key !== 'phone' && key !== 'timeTaken');
         questionKeys.forEach(key => {
             const th = document.createElement('th');
-            th.textContent = key;
+            th.textContent = `Answer to ${key}`;
             headerRow.appendChild(th);
         });
 
@@ -116,7 +115,7 @@ function loadAnswerSheet() {
 
         allAnswers.forEach(user => {
             const row = document.createElement('tr');
-            row.innerHTML = `<td>${user.name}</td><td>${user.email}</td><td>${user.timeTaken}</td><td>${user.q30}</td><td>${user.q31_answer}</td>`;
+            row.innerHTML = `<td>${user.name}</td><td>${user.email}</td><td>${user.timeTaken}</td>`;
 
             questionKeys.forEach(key => {
                 const td = document.createElement('td');
@@ -133,7 +132,6 @@ function loadAnswerSheet() {
         allUserAnswersDiv.textContent = 'No answers submitted yet.';
     }
 }
-
 
 function preventBackNavigation() {
     history.pushState(null, null, location.href);
